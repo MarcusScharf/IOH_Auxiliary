@@ -1,0 +1,116 @@
+/*
+    <editor-fold desc=" Main Window ">
+*/
+.ioh-welcome-wrapper {
+    margin: 0 auto;
+    padding: 1em 0;
+    width: 72%;
+}
+
+#ioh-content h2 h3 {
+    text-align: center;
+}
+
+#ioh-content .play span {
+    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/button_icons.png?v=725") no-repeat scroll 0 0;
+    vertical-align: middle;
+}
+
+#ioh-content-settings {
+    text-align: right;
+}
+
+#ioh-content-settings label {
+    width: 40%;
+}
+
+#ioh-content-settings label input {
+    width: 50%;
+    margin: 5px 0 5px 40px;
+}
+
+#ioh-content-settings .button.blue.search.configure {
+    height: 28px;
+    margin-top: 5px;
+}
+
+#ioh-content-settings .button.blue.search.configure span {
+    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/button_icons.png?v=726") no-repeat scroll -133px -3px;
+    height: 21px;
+    vertical-align: middle;
+    width: 17px;
+}
+
+#ioh-content-settings p {
+    text-align: left;
+    padding-left: 50%;
+}
+
+#ioh-content .window-footer .window-footer-top {
+    background-image: url("http://ihcdn3.ioimg.org/iov6live/gui/footers/oc.png?v=71");
+}
+
+#ioh-content h2, h3 {
+    text-align: center;
+}
+/*
+   </editor-fold>
+*/
+
+/*
+    <editor-fold desc=" UI Enhancements ">
+*/
+#ioh-plunder-calculator.resources-bar {
+    background-color: #218400;
+}
+
+.ioh-main {
+    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/tabs_pict.png?v=724") no-repeat scroll -32px -242px
+}
+
+.ioh-main:hover {
+    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/tabs_pict.png?v=724") no-repeat scroll -1px -242px
+}
+
+#ioh-expand-toggle {
+    background: url("http://ihcdn3.ioimg.org/iov6live/gui/tabs_pict.png?v=725") -115px -295px;
+    cursor: pointer;
+    height: 40px;
+}
+
+#ioh-expand-toggle:hover {
+    background: url("http://ihcdn3.ioimg.org/iov6live/gui/tabs_pict.png?v=725") -145px -295px;
+    cursor: pointer;
+    height: 40px;
+}
+
+/*.ioh-divide-army {
+    border-bottom: 1px solid;
+}
+
+.ioh-divide-army:hover {
+    border-bottom: none;
+}*/
+/*
+   </editor-fold>
+*/
+
+
+.ui-mm.mm-scan {
+    border-bottom-right-radius: 20px;
+}
+
+.ui-mm.mm-scan span {
+    background-position: -60px -92px;
+}
+
+.ui-mm.mm-scan span:hover, .ui-mm.mm-scan.active span {
+    background-position: -60px -112px;
+}
+
+.ui-mm span {
+    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/map/map-gui.png?v=74") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+}
