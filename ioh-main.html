@@ -1,4 +1,13 @@
-
+<!-- Tabs -->
+<ul id="ioh-tabs" style="display: block;" class="window-tabs" >
+    <li class="ui-ib ioh active" id="tab-general"><a soundoverwrite="true" href="#">
+        <div></div>
+        General</a></li>
+    <li class="ui-ib ioh" id="tab-schedules"><a soundoverwrite="true" href="#">
+        <div></div>
+        Schedules</a></li>
+</ul>
+<!-- EOF Tabs -->
 
 <!-- Main Window Content -->
 <div id="ioh-content" class="tabs-content clear">
@@ -42,52 +51,9 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
         <!-- General Tab -->
         <div id="tab-schedules-content" class="content" style="display: none;">
 
-            </div>
-            <!-- EOF Welcome Wrapper Content -->
-
-            <hr class="divider">
-
-            <!-- Recorded Attacks Content -->
-            <div id="ioh-recorded-attacks" class="missions">
-                <h3>Recorded attacks</h3>
-
-                <table class="data-grid middle">
-                    <tr>
-                        <th>
-                            <div class="table-header-icons from-to"></div>
-                        </th>
-                        <th>
-                            <div class="table-header-icons type-mission"></div>
-                        </th>
-                        <th>
-                            <div class="table-header-icons army"></div>
-                        </th>
-                        <th class="th-time">
-                            <div class="table-header-icons timer"></div>
-                        </th>
-                        <th>
-                            <div class="table-header-icons actions"></div>
-                        </th>
-                    </tr>
-                </table>
-
-            </div>
-            <!-- EOF Recorded Attacks Content -->
-
-            <hr class="divider">
-
-            <!-- Settings Content -->
-            <div id="ioh-content-settings">
-
-                <h2>Settings</h2>
-
-            </div>
-            <!-- EOF Settings Content -->
-
-            <hr class="divider">
 
         </div>
-        <!-- EOF Content -->
+        <!-- EOF General Tab -->
 
         <!-- Footer Window Content -->
         <div class="window-footer">
@@ -97,8 +63,39 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
             </div>
         </div>
         <!-- EOF Footer Window Content -->
-
     </div>
-    <!-- EOF Window -->
 </div>
 <!-- EOF Main Window Content -->
+/*
+    <editor-fold desc=" Tab Styles ">
+*/
+.ioh#tab-general a div {
+    background-position: -210px -180px;
+}
+
+.ioh#tab-general.active a div {
+    background-position: -180px -180px;
+}
+
+.ioh#tab-schedules a div {
+    background-position: -210px -90px;
+}
+
+.ioh#tab-schedules.active a div {
+    background-position: -180px -90px;
+}
+/*
+   </editor-fold>
+*/
+
+/*
+    <editor-fold desc=" Welcome Wrapper ">
+*/
+.ioh-welcome-wrapper {
+    margin: 0 auto;
+    padding: 1em 0;
+    width: 72%;
+}
+/*
+   </editor-fold>
+*/
