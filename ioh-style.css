@@ -1,12 +1,33 @@
 /*
-    <editor-fold desc=" Main Window ">
+    <editor-fold desc=" Tab Styles ">
+*/
+.ioh#tab-general a div {
+    background-position: -210px -180px;
+}
+
+.ioh#tab-general.active a div {
+    background-position: -180px -180px;
+}
+
+.ioh#tab-schedules a div {
+    background-position: -210px -90px;
+}
+
+.ioh#tab-schedules.active a div {
+    background-position: -180px -90px;
+}
+/*
+   </editor-fold>
+*/
+
+/*
+    <editor-fold desc=" Welcome Wrapper ">
 */
 .ioh-welcome-wrapper {
     margin: 0 auto;
     padding: 1em 0;
     width: 72%;
 }
-
 #ioh-content h2 h3 {
     text-align: center;
 }
@@ -87,10 +108,29 @@
 /*.ioh-divide-army {
     border-bottom: 1px solid;
 }
-
 .ioh-divide-army:hover {
     border-bottom: none;
 }*/
 /*
    </editor-fold>
 */
+
+
+.ui-mm.mm-scan {
+    border-bottom-right-radius: 20px;
+}
+
+.ui-mm.mm-scan span {
+    background-position: -60px -92px;
+}
+
+.ui-mm.mm-scan span:hover, .ui-mm.mm-scan.active span {
+    background-position: -60px -112px;
+}
+
+.ui-mm span {
+    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/map/map-gui.png?v=74") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+}
