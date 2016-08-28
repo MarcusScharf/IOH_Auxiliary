@@ -1,96 +1,33 @@
 /*
-    <editor-fold desc=" Main Window ">
+    <editor-fold desc=" Tab Styles ">
 */
-.ioh-welcome-wrapper {
-    margin: 0 auto;
-    padding: 1em 0;
-    width: 72%;
+.ioh#tab-general a div {
+    background-position: -210px -180px;
 }
 
-#ioh-content h2 h3 {
-    text-align: center;
+.ioh#tab-general.active a div {
+    background-position: -180px -180px;
 }
 
-#ioh-content .play span {
-    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/button_icons.png?v=725") no-repeat scroll 0 0;
-    vertical-align: middle;
+.ioh#tab-schedules a div {
+    background-position: -210px -90px;
 }
 
-#ioh-content-settings {
-    text-align: right;
-}
-
-#ioh-content-settings label {
-    width: 40%;
-}
-
-#ioh-content-settings label input {
-    width: 50%;
-    margin: 5px 0 5px 40px;
-}
-
-#ioh-content-settings .button.blue.search.configure {
-    height: 28px;
-    margin-top: 5px;
-}
-
-#ioh-content-settings .button.blue.search.configure span {
-    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/button_icons.png?v=726") no-repeat scroll -133px -3px;
-    height: 21px;
-    vertical-align: middle;
-    width: 17px;
-}
-
-#ioh-content-settings p {
-    text-align: left;
-    padding-left: 50%;
-}
-
-#ioh-content .window-footer .window-footer-top {
-    background-image: url("http://ihcdn3.ioimg.org/iov6live/gui/footers/oc.png?v=71");
-}
-
-#ioh-content h2, h3 {
-    text-align: center;
+.ioh#tab-schedules.active a div {
+    background-position: -180px -90px;
 }
 /*
    </editor-fold>
 */
 
 /*
-    <editor-fold desc=" UI Enhancements ">
+    <editor-fold desc=" Welcome Wrapper ">
 */
-#ioh-plunder-calculator.resources-bar {
-    background-color: #218400;
+.ioh-welcome-wrapper {
+    margin: 0 auto;
+    padding: 1em 0;
+    width: 72%;
 }
-
-.ioh-main {
-    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/tabs_pict.png?v=724") no-repeat scroll -32px -242px
-}
-
-.ioh-main:hover {
-    background: rgba(0, 0, 0, 0) url("http://ihcdn3.ioimg.org/iov6live/gui/tabs_pict.png?v=724") no-repeat scroll -1px -242px
-}
-
-#ioh-expand-toggle {
-    background: url("http://ihcdn3.ioimg.org/iov6live/gui/tabs_pict.png?v=725") -115px -295px;
-    cursor: pointer;
-    height: 40px;
-}
-
-#ioh-expand-toggle:hover {
-    background: url("http://ihcdn3.ioimg.org/iov6live/gui/tabs_pict.png?v=725") -145px -295px;
-    cursor: pointer;
-    height: 40px;
-}
-
-/*.ioh-divide-army {
-    border-bottom: 1px solid;
-}
-
-.ioh-divide-army:hover {
-    border-bottom: none;
-}*/
 /*
    </editor-fold>
 */
