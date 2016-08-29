@@ -1,13 +1,13 @@
 .hg/
 .idea/
 *.iml
-/*.min.js
+*.min.js
 *.user.js
 .hgignore
 *-minified.js
 
 #Mr Developer
 .mr.developer.cfg
-/*.min.js
+*.min.js
 GreaseMonkey_SuperValues.js
 WaitForKeyElements.js
