@@ -1,7 +1,7 @@
 .hg/
 .idea/
 *.iml
-*.min.js
+/*.min.js
 *.user.js
 .hgignore
 *-minified.js
