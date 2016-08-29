@@ -1,3 +1,13 @@
+
+<ul id="ioh-tabs" class="window-tabs" style="display: block;">
+    <li id="tab-general" class="ui-ib active ioh"><a href="#" soundoverwrite="true">
+        <div></div>
+        General</a></li>
+    <li id="tab-schedules" class="ui-ib ioh"><a href="#" soundoverwrite="true">
+        <div></div>
+        Schedules</a></li>
+</ul>
+
 <style>
     .ioh#tab-general a div {
         background-position: -210px -180px;
