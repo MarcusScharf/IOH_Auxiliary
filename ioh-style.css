@@ -1,4 +1,12 @@
 <style>
+    .ioh-welcome-wrapper {
+        margin: 0 auto;
+        padding: 1em 0;
+        width: 72%;
+    }
+</style>
+
+<style>
     .ioh#tab-general a div {
         background-position: -210px -180px;
     }
