@@ -10,6 +10,7 @@
 // ==/UserScript==
 
 /*		ALTERE O TEXTO ENTRE ASPAS para madeira, ferro, ou pedra. NÃO REMOVA AS ASPAS	*/
+/ * CHANGE TEXT AMONG EQUALS wood, iron or stone. DO NOT REMOVE THE QUOTES * /
 var recurso = "pedra";
 
 setInterval(function(){
@@ -37,7 +38,7 @@ setInterval(function(){
        $('a.btnSellLabel').click(); 
 
        am=document.getElementById('pr1').value = "4.73";       //* ALTERE NUMERO DO VOLUE ENTRE AS ASPAS PARA DETERMINAR O VALOR DA VENDA *//
-        
+                                                               // * CHANGE NUMBER VOLUME BETWEEN THE QUOTES FOR DETERMINING THE VALUE OF SALE * //
     setTimeout(function () {
       xajax_doSellResource('market',xajax.getFormValues('sellForm'));
        },8000);
