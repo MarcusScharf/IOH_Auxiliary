@@ -9,8 +9,8 @@
 // @grant		 none
 // ==/UserScript==
 
-/*		ALTERE O TEXTO ENTRE ASPAS para madeira, ferro, ou pedra. NÃO REMOVA AS ASPAS	*/
-/ * CHANGE TEXT AMONG EQUALS wood, iron or stone. DO NOT REMOVE THE QUOTES * /
+//*		ALTERE O TEXTO ENTRE ASPAS para madeira, ferro, ou pedra. NÃO REMOVA AS ASPAS	*/
+// * CHANGE TEXT AMONG EQUALS wood, iron or stone. DO NOT REMOVE THE QUOTES * /
 var recurso = "pedra";
 
 setInterval(function(){
