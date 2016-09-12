@@ -1,0 +1,44 @@
+// ==UserScript==
+// @name         Vender no Mercado
+// @namespace    www.imperiaonline.org
+// @version      1
+// @description  Ø
+// @author       455
+// @match        *.imperiaonline.org/*
+// @grant		 none
+// ==/UserScript==
+
+/*		ALTERE O TEXTO ENTRE ASPAS para madeira, ferro, ou pedra. NÃO REMOVA AS ASPAS	*/
+var recurso = "pedra";
+
+setInterval(function(){
+    	//aperta M para abrir o Mercado
+		tecla = $.Event('keyup');
+		tecla.keyCode= 77;    
+    	$('#village').trigger(tecla);
+    	//apertou  
+    
+    //abre aba "Comprar" clicando no recurso correto.
+    setTimeout(function(){
+        if (recurso == "madeira"){
+        	void(xajax_viewTradeScreen('market',{'tab':1,'resType':1}));
+        }
+        if (recurso == "ferro"){
+        	void(xajax_viewTradeScreen('market',{'tab':1,'resType':2}));
+        }
+        if (recurso == "pedra"){
+        	void(xajax_viewTradeScreen('market',{'tab':1,'resType':3}));
+        }
+    },4000);
+    //abriu aba Comprar
+        
+    setTimeout(function(){
+       $('a.btnSellLabel').click(); 
+
+       am=document.getElementById('pr1').value = "4.73";       //* ALTERE NUMERO DO VOLUE ENTRE AS ASPAS PARA DETERMINAR O VALOR DA VENDA *//
+        
+    setTimeout(function () {
+      xajax_doSellResource('market',xajax.getFormValues('sellForm'));
+       },8000);
+    },16000);
+},32000);
