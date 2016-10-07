@@ -1,105 +1,230 @@
-<!-- Tabs -->
-<ul id="ioh-tabs" style="display: block;" class="window-tabs" >
-    <li class="ui-ib ioh active" id="tab-general"><a soundoverwrite="true" href="#">
-        <div></div>
-        General</a></li>
-    <li class="ui-ib ioh" id="tab-schedules"><a soundoverwrite="true" href="#">
-        <div></div>
-        Schedules</a></li>
-</ul>
-<!-- EOF Tabs -->
-<!-- Main Window Content -->
-<div id="ioh-content" class="tabs-content clear">
-    <span class="window-decor-left"></span>
-    <span class="window-decor-right"></span>
-
-    <!-- Window -->
-    <div class="window-size window-wide">
-
-        <!-- Content -->
-        <div id="ioh-main-content" class="content">
-
-            <!-- Welcome Wrapper Content -->
-            <div class="ioh-welcome-wrapper">
-<pre>          .                                                      .
-        .n                   .                 .                  n.
-  .   .dP                  dP                   9b                 9b.    .
- 4    qXb         .       dX                     Xb       .        dXp     t
-dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
-9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP
- 9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP
-  `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'
-    `9XXXXXXXXXXXP' `9XX'          `98v8P'          `XXP' `9XXXXXXXXXXXP'
-        ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~
-                        )b.  .dbo.dP'`v'`9b.odb.  .dX(
-                      ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.
-                     dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb
-                    dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb
-                    9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP
-                     `'      9XXXXXX(   )XXXXXXP      `'
-                              XXXX X.`v'.X XXXX
-                              XP^X'`b   d'`X^XX
-                              X. 9  `   '  P )X
-                              `b  `       '  d'
-                               `             '
-</pre>
-            </div>
-            <!-- EOF Welcome Wrapper Content -->
-
-            <hr class="divider">
-
-            <!-- Recorded Attacks Content -->
-            <div id="ioh-recorded-attacks" class="missions">
-                <h3>Recorded attacks</h3>
-
-                <table class="data-grid middle">
-                    <tr>
-                        <th>
-                            <div class="table-header-icons from-to"></div>
-                        </th>
-                        <th>
-                            <div class="table-header-icons type-mission"></div>
-                        </th>
-                        <th>
-                            <div class="table-header-icons army"></div>
-                        </th>
-                        <th class="th-time">
-                            <div class="table-header-icons timer"></div>
-                        </th>
-                        <th>
-                            <div class="table-header-icons actions"></div>
-                        </th>
-                    </tr>
-                </table>
-
-            </div>
-            <!-- EOF Recorded Attacks Content -->
-
-            <hr class="divider">
-
-            <!-- Settings Content -->
-            <div id="ioh-content-settings">
-
-                <h2>Settings</h2>
-
-            </div>
-            <!-- EOF Settings Content -->
-
-            <hr class="divider">
-
+<div id="ift-map-scan" class="window-wrapper ui-draggable active" style="left: 65px; top: 200px; z-index: 1001; display: inline-block;">
+    <div class="window-title" title="Scanner of map" id="ui-id-17">
+        <a class="ui-ib fleft info" href="javascript:void(xajax_viewFeedbackWindow(container.open({'saveName' : 'feedback'}), {'params' : container.opened['ift-map-scan'].feedback}))" onmouseup=" $(this).closest('.ui-draggable').removeClass('no-drag');" onmousedown="$(this).closest('.ui-draggable').addClass('no-drag');" title="Send feedback"></a>
+        <span class="ui-ib fleft title-separator"></span>
+        <a class="ui-ib fleft refresh" id="refreshift-map-scan" style="visibility: visible;" href="javascript:void(0)" onmouseup=" $(this).closest('.ui-draggable').removeClass('no-drag');" onmousedown="$(this).closest('.ui-draggable').addClass('no-drag');" title="Refresh"></a>
+        <div class="title">
+            <div class="arrow left disabled"></div>
+            <span class="txt-title">Scanner of map</span>
+            <div class="arrow right disabled"></div>
         </div>
-        <!-- EOF Content -->
-
-        <!-- Footer Window Content -->
-        <div class="window-footer">
-            <div class="window-footer-top"></div>
-            <div class="window-footer-content">
-                <div></div>
-            </div>
-        </div>
-        <!-- EOF Footer Window Content -->
-
+        <a class="ui-ib fright close" href="javascript:void(container.close({saveName: 'ift-map-scan', cancelCallback: true, flow: true, closedWith: 'click'}))" onmouseup=" $(this).closest('.ui-draggable').removeClass('no-drag');" onmousedown="$(this).closest('.ui-draggable').addClass('no-drag');" title="Close"></a>
+        <a href="javascript:;" onclick="ift.bar.minimaze('ift-map-scan');" class="minimaze fright" style="color:white;cursor:pointer;background-image:none;">
+            <img src="http://www.imperia-firetools.net/images/minimize-window-16.png">
+        </a>
     </div>
-    <!-- EOF Window -->
+    <div id="messageboxift-map-scan" class="window-content">
+        <div id="ift-map-scan-content" style="display:block;margin:0;padding:5px;text-align:center;border:none;">
+            <form id="ift-map-scan-form" onsubmit="return false;">
+                <table class="data-grid">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="dropdown-wrap ui-ib">
+                                    <select title="#precnik_pretrage" class="dropdown ui-pass" name="rangescan">
+                                        <option value="66">0-66</option>
+                                        <option value="132">0-132</option>
+                                        <option value="198">0-198</option>
+                                        <option value="264">0-264</option>
+                                        <option value="330">0-330</option>
+                                        <option value="396">0-396</option>
+                                        <option value="462">0-462</option>
+                                        <option value="528">0-528</option>
+                                        <option value="594">0-594</option>
+                                        <option value="660">0-660</option>
+                                        <option value="726">0-726</option>
+                                        <option value="792">0-792</option>
+                                        <option value="858">0-858</option>
+                                        <option value="924">0-924</option>
+                                        <option value="990">0-990</option>
+                                    </select>
+                                    <div>
+                                        0-66 <span class="arrow"></span>
+                                    </div>
+                                    <ul>
+                                        <li class="selected" value="66">0-66</li>
+                                        <li class="" value="132">0-132</li>
+                                        <li class="" value="198">0-198</li>
+                                        <li class="" value="264">0-264</li>
+                                        <li class="" value="330">0-330</li>
+                                        <li class="" value="396">0-396</li>
+                                        <li class="" value="462">0-462</li>
+                                        <li class="" value="528">0-528</li>
+                                        <li class="" value="594">0-594</li>
+                                        <li class="" value="660">0-660</li>
+                                        <li class="" value="726">0-726</li>
+                                        <li class="" value="792">0-792</li>
+                                        <li class="" value="858">0-858</li>
+                                        <li class="" value="924">0-924</li>
+                                        <li class="" value="990">0-990</li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="ift-map-user-search" value="">
+                                <input type="text" class="text" id="ift-map-user-search" value="">
+                            </td>
+                            <td>
+                                <button type="button" class="button small" value="Search" onclick="$(this).css('visibility','hidden');ift.findUserHoldingsbyName($(this.form['ift-map-user-search']).val(),parseInt($(this.form.rangescan).val()),xajax.getFormValues('ift-map-scan-form').filter,{x:parseInt($(this.form['ift-map-scan-x']).val()),y:parseInt($(this.form['ift-map-scan-y']).val())},xajax.getFormValues('ift-map-scan-form').autospy);" title="#scan_user">Search</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                X<input type="text" style="width:40px;" class="text" name="ift-map-scan-x" value="">
+                                Y<input style="width:40px;" type="text" class="text" name="ift-map-scan-y" value="">
+                                <div class="button icons" title="#h_cords" onclick="$(this).parent().find('input[name=ift-map-scan-y]').val(ift.h_cords.y);$(this).parent().find('input[name=ift-map-scan-x]').val(ift.h_cords.x);">
+                                    <span></span>
+                                </div>
+                                <div class="button icons" title="#c_cords" onclick="$(this).parent().find('input[name=ift-map-scan-y]').val(ift.c_cords.y);$(this).parent().find('input[name=ift-map-scan-x]').val(ift.c_cords.x);">
+                                    <span></span>
+                                </div>
+                                <input type="hidden" name="ift-map-alliance-search" value="">
+                                <input type="text" class="text" id="ift-map-alliance-search" value="" style="color:red;font-style:bold;">
+                            </td>
+                            <td>
+                                <button type="button" class="button small" title="#scan_global" value="Search" onclick="$(this).css('visibility','hidden');ift.findHoldingsByCords({x:parseInt($(this.form['ift-map-scan-x']).val()),y:parseInt($(this.form['ift-map-scan-y']).val())},parseInt($(this.form.rangescan).val()),xajax.getFormValues('ift-map-scan-form').filter,xajax.getFormValues('ift-map-scan-form').autospy);">Search</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span title="Province">
+                                    <span class="prov-pict holding1"></span>
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[3]" value="province">
+                                    </div>
+                                </span>
+                                <span title="Colony">
+                                    <span class="prov-pict holding3"></span>
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[4]" value="colony">
+                                    </div>
+                                </span>
+                                <span title="Trading Post">
+                                    <span class="prov-pict holding4"></span>
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[5]" value="tpost">
+                                    </div>
+                                </span>
+                                <span title="Military Post">
+                                    <span class="prov-pict holding5"></span>
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[6]" value="mpost">
+                                    </div>
+                                </span>
+                                <span title="Vassal">
+                                    <span class="prov-pict holding6"></span>
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[7]" value="vassal">
+                                    </div>
+                                </span>
+                            </td>
+                            <td>
+                                <button type="button" class="button small" title="#alliance_filter_search" value="Search" onclick="$(this).css('visibility','hidden');ift.findUsersHoldingsOfAlliance($(this.form['ift-map-alliance-search']).val(),parseInt($(this.form.rangescan).val()),xajax.getFormValues('ift-map-scan-form').filter,{x:parseInt($(this.form['ift-map-scan-x']).val()),y:parseInt($(this.form['ift-map-scan-y']).val())},xajax.getFormValues('ift-map-scan-form').autospy);">Search</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span title="Special Resorses">
+                                    <span class="prov-pict holding4"></span>
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[0]" value="spec">
+                                    </div>
+                                </span>
+                                <span title="Barbarian Camp">
+                                    <span class="table-header-icons nomads-tent"></span>
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[1]" value="barb">
+                                    </div>
+                                </span>
+                                <span title="Independent City">
+                                    <span class="prov-pict holding2"></span>
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[2]" value="city">
+                                    </div>
+                                </span>
+                                <span title="Rally Point">
+                                    <span class="prov-pict holding21"></span>
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[8]" value="ampost">
+                                    </div>
+                                </span>
+                                <span title="All types of object on map">
+                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                        <input class="checkbox ui-pass" type="checkbox" name="filter[9]" value="all">
+                                    </div>
+                                </span>
+                            </td>
+                            <td>
+                                <button type="button" class="button small" title="#find_closest_object_of_cordinates" value="Search" onclick="ift.find_closest_object_of_cordinates($(this.form['ift-map-alliance-search']).val(),{x:parseInt($(this.form['ift-map-scan-x']).val()),y:parseInt($(this.form['ift-map-scan-y']).val())});">Search</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <span class="table-header-icons number-spies"></span>
+                                </center>
+                                <table class="data-grid">
+                                    <tbody>
+                                        <tr></tr>
+                                        <tr>
+                                            <td>
+                                                <span title="Province">
+                                                    <span class="prov-pict holding1"></span>
+                                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                                        <input class="checkbox ui-pass" type="checkbox" name="autospy[0]" value="prestonica">
+                                                    </div>
+                                                </span>
+                                                <span title="Province">
+                                                    <span class="prov-pict holding1"></span>
+                                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                                        <input class="checkbox ui-pass" type="checkbox" name="autospy[1]" value="province">
+                                                    </div>
+                                                </span>
+                                                <span title="Colony">
+                                                    <span class="prov-pict holding3"></span>
+                                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                                        <input class="checkbox ui-pass" type="checkbox" name="autospy[2]" value="colony">
+                                                    </div>
+                                                </span>
+                                                <span title="Trading Post">
+                                                    <span class="prov-pict holding4"></span>
+                                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                                        <input class="checkbox ui-pass" type="checkbox" name="autospy[3]" value="tpost">
+                                                    </div>
+                                                </span>
+                                                <span title="Military Post">
+                                                    <span class="prov-pict holding5"></span>
+                                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                                        <input class="checkbox ui-pass" type="checkbox" name="autospy[4]" value="mpost">
+                                                    </div>
+                                                </span>
+                                                <span title="Vassal">
+                                                    <span class="prov-pict holding6"></span>
+                                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                                        <input class="checkbox ui-pass" type="checkbox" name="autospy[5]" value="vassal">
+                                                    </div>
+                                                </span>
+                                                <span title="Rally Point">
+                                                    <span class="prov-pict holding21"></span>
+                                                    <div class="checkbox-wrap ui-ib" style="undefined">
+                                                        <input class="checkbox ui-pass" type="checkbox" name="autospy[6]" value="ampost">
+                                                    </div>
+                                                </span>
+                                                <a href="javascript:;" class="table-header-icons settings" title="" onclick="container.open({saveName:'ift-autospy-config',title:'title'});"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <div id="ift-map-scan-bonus-acitons" style="height:25px;"></div>
+            <div id="ift-map-scan-resulsts"></div>
+        </div>
+    </div>
 </div>
-<!-- EOF Main Window Content -->
